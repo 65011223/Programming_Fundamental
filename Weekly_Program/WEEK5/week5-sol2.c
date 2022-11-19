@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
+//partนี้เป็นpartเก็บค่าความกว้างของจอผู้ใช้ซึ่งออกมาเป็นหน่วยตัวอักษร จึงสัมพันธ์กับstrlen()
 #ifdef _WIN32
 #include <Windows.h>
 int GetColumnWidth()
@@ -17,7 +17,7 @@ int GetColumnWidth()
 #else
 int GetColumnWidth() {return 80;}
 #endif
-
+//partการทำงาานจริงเพื่อแสดงผลข้อความที่กลางจอ
 int main()
 {
     const char *s = "Hey, I'm centered!";
